@@ -1,0 +1,103 @@
+body{
+    /* background-image: url(bg-img.jpg); */
+    font-family: 'Sans', 'Sans serif';
+    background-color: #EAF2F8;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+.h1-dsgn{
+    /*  display: flex;  */
+    flex-wrap: wrap; 
+    flex-basis: 50%;
+    /* flex-direction: row; */
+    /* width: 200px; */
+    margin-top: 250px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+.main-con{
+    flex-basis: 100%;
+    background-color: #FBFCFC;
+    max-width: 300px;
+    height: 500px;
+    border-radius: 10px ;
+    box-shadow: 4px -3px 3px 5px #D0D3D4;
+    margin: 30px 90px;
+    padding: 5px;
+    border-bottom: 3px solid #273746;
+}
+/* .history{
+    width: 86%;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: #FBFCFC;
+    cursor: pointer;
+    outline: inherit;
+    text-align: right;
+    font-size: 18px;
+} */
+.result{
+    background-color: #F2F3F4 ;
+    width: 86%;
+    height: 60px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 32px;
+    border-width: 0px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: right;
+}
+.number, .opr, .ac, .zero{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    margin-top: 15px;
+    border-width: 0px;
+    border-radius: 50%; 
+    background-color: #ffffff;       
+} 
+.ac, #opr{
+    background-color: #273746;
+    color: white;
+}
+.number{
+    box-shadow: 2px 3px 2px 3px #D0D3D4 ;
+    color: darkslategray;
+}
+.number:active, .opr:active, .ac:active, .zero:active{
+    font-size: 12px;
+}
+.opr{
+    background-color: orange;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.zero{
+    width: 125px;
+    background-color: #273746;
+    color: white;
+    border-radius: 25px;
+}
+button, .result{
+	border: none;
+	cursor: pointer;
+    outline: inherit;
+}
+@media screen and (max-width: 600px) {
+    body, .main-con, .h1-dsgn{
+     width: 100%;
+     height: 100%;
+     margin-top: 10px;
+     
+    }
+  }
